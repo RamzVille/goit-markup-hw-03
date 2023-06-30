@@ -1,0 +1,306 @@
+:root {
+    --cloud:#F4F4FD;
+    --white:#ffffff;
+    --navyblue:#2E2F42;
+    --iris: #4D5AE5;
+    --ocean:#404BBF;
+    --cornflower:#E7E9FC;
+    --slate: #434455;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-white);
+    color: var(--navyblue);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+/* default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*---*/
+
+.active-link{
+    color: var(--ocean);
+}
+.menu-link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.link:hover, .link:focus {
+    color: var(--iris);
+}
+.link:active {
+    color: var(--ocean);
+}
+.contact-links .link {
+    color: var(--navyblue);
+}
+.contact-links .link:focus, .link:hover {
+    color: var(--iris);
+}
+.contact-links .link:active {
+    color: var(--ocean);
+}
+
+.logo-web, .logo-studio{
+    color: var(--iris);
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.logo-studio{
+    color: var(--navyblue);
+}
+.logo-studio-white {
+    color: var(--white);
+}
+.container {
+    display: block;
+    padding: 10px;
+    padding-bottom: 20px;
+    height: 40px;
+    border-bottom: 1px solid var(--cornflower);
+    background: var(--white, #FFF);
+}
+.container-contacts {
+    display: flex;
+    padding-right: 30px;
+    gap: 50px;
+    float: right;
+}
+.menu {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.what-we-do_item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 300px;
+    border: 1px solid var(--cornflower);
+    background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
+}
+.hero,
+.footer {
+    background-color: var(--navyblue);
+    color: var(--white);
+    padding: 90px;
+    flex-shrink: 0;
+}
+.footer-item{
+    color: var(--cloud);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    text-align: center;
+}
+.section-3 {
+    background-color: var(--cloud);
+    color: var(--navyblue);
+}
+.main-button {
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--iris);
+    color: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.hero-container_button {
+    text-align: center;
+    padding-top: 48px;
+}
+.button:hover{
+    background-color: var(--ocean);
+}
+.section{
+    flex-shrink: 0;
+    padding: 120px;
+}
+.benefits {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.benefits-description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.what-we-do{
+    display: flex;
+    padding: 50px;
+    gap: 24px;
+    justify-content: center;
+}
+.section_title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.team-background {
+    padding: 50px;
+    height: 600px;
+    background: var(--cloud);
+}
+.team {
+    display: flex;
+    padding: 50px;
+    gap: 24px;
+    justify-content: center;
+}
+.team-item {
+    padding: 0px 0px 32px 0px;
+    width: 264px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-name{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.team-position{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.button-filter{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
+    color: var(--iris);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+.button-filter:hover {
+    background-color: var(--ocean);
+    cursor: pointer;
+    color: var(--white);
+    border: 1px solid var(--ocean);
+}
+.button-filter-active {
+    background: var(--ocean);
+    color: var(--white);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid var(--ocean);
+    cursor: pointer;
+}
+.filter {
+    display: flex;
+    height: 30px;
+    padding-bottom: 50px;
+    gap: 24px;
+    justify-content: center;
+}
+.portfolio {
+    display: flex;
+    gap: 24px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.portfolio_item{
+    display: flex;
+    width: 360px;
+    height: 420px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid var(--cornflower);
+}
+.portfolio_title{
+    padding-top: 25px;
+    padding-left: 10px;
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.portfolio_description{
+    padding-left: 10px;
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
