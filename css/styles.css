@@ -276,7 +276,6 @@ img {
     display: flex;
     gap: 24px;
     padding-top: 30px;
-    justify-content: center;
 }
 
 .portfolio_item{
