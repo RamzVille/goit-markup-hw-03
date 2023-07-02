@@ -97,23 +97,28 @@ img {
     color: var(--white);
 }
 .container {
-    display: block;
-    padding: 10px;
-    padding-bottom: 20px;
-    height: 40px;
-    border-bottom: 1px solid var(--cornflower);
-    background: var(--white, #FFF);
+    width: 1440px;
+    padding: 0 156px;
+    margin: 0 auto;
 }
 .container-contacts {
     display: flex;
-    padding-right: 30px;
-    gap: 50px;
-    float: right;
+    gap: 40px;
+ 
+}
+.header{
+    padding: 25px 0;
+    border-bottom: 1px solid var(--cornflower);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
 }
 .menu {
     display: inline-flex;
     align-items: flex-start;
     gap: 40px;
+    margin-left: 76px;
 }
 
 .what-we-do_item {
@@ -125,14 +130,26 @@ img {
     border: 1px solid var(--cornflower);
     background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
 }
+.what-we-do {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
 .hero,
 .footer {
     background-color: var(--navyblue);
-    color: var(--white);
-    padding: 90px;
+    padding: 100px 0;
+ 
+}
+.footer-container{
+    width: 1440px;
     flex-shrink: 0;
 }
+.hero-container{
+    text-align: center;
+}
 .footer-item{
+    margin-top: 17.5px;
     color: var(--cloud);
     font-size: 16px;
     line-height: 24px;
@@ -144,6 +161,12 @@ img {
     line-height: 60px;
     letter-spacing: 1.12px;
     text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+.hero-container_button {
+    text-align: center;
+    padding-top: 48px;
 }
 .section-3 {
     background-color: var(--cloud);
@@ -160,16 +183,12 @@ img {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
-.hero-container_button {
-    text-align: center;
-    padding-top: 48px;
-}
 .button:hover{
     background-color: var(--ocean);
 }
 .section{
     flex-shrink: 0;
-    padding: 120px;
+    padding: 120px 0;
 }
 .benefits {
     gap: 24px;
@@ -188,12 +207,6 @@ img {
     line-height: 24px;
     letter-spacing: 0.32px;
 }
-.what-we-do{
-    display: flex;
-    padding: 50px;
-    gap: 24px;
-    justify-content: center;
-}
 .section_title{
     font-size: 36px;
     font-weight: 700;
@@ -201,15 +214,13 @@ img {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 70px;
 }
 .team-background {
-    padding: 50px;
-    height: 600px;
     background: var(--cloud);
 }
 .team {
     display: flex;
-    padding: 50px;
     gap: 24px;
     justify-content: center;
 }
@@ -273,9 +284,10 @@ img {
     justify-content: center;
 }
 .portfolio {
+    margin-top: 72px;
     display: flex;
-    gap: 24px;
-    padding-top: 30px;
+    gap: 48px 24px;
+    flex-wrap: wrap;
 }
 
 .portfolio_item{
