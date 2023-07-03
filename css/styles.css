@@ -185,15 +185,14 @@ img {
 .button:hover{
     background-color: var(--ocean);
 }
+.section {
+    padding: 120px 0;
+}
 .section-no-top-padding {
     padding-top: 0;
 }
-.section{
-    flex-shrink: 0;
-    padding: 120px 0;
-}
 .benefits {
-    gap: 24px;
+    gap: 22px;
     display: flex;
     align-items: center;
 }
@@ -202,6 +201,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
+    margin-bottom: 8px;
     letter-spacing: 0.4px;
 }
 .benefits-description{
